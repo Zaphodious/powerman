@@ -1,0 +1,115 @@
+html {
+  background-color: hsla(240, 100%, 90%, 1.0);
+  position: fixed;
+}
+
+html #frame {
+  position: fixed;
+  top: 0.0%;
+  bottom: 0.0%;
+  right: 0.0%;
+  left: 0.0%;
+}
+
+html ul {
+  display: inline-block;
+  padding: 0.0%;
+  margin: 0.0%;
+}
+
+html ul li {
+  display: inline-block;
+}
+
+html #menubar-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 20.0vmin;
+}
+
+html #menubar-top ul#infobar {
+  font-size: 3.0vmin;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0.5vmin;
+  height: 5.0vmin;
+  width: 100%;
+}
+
+html #menubar-top ul#infobar li {
+  width: 30.5vmin;
+  border-width: 0.1vmin;
+  padding-bottom: 0px;
+  margin-right: 0.5vmin;
+  text-align: center;
+  border-style: solid;
+  border-bottom-right-radius: 3.0vmin;
+  border-bottom-left-radius: 3.0vmin;
+  padding-right: 1.0vmin;
+  padding-left: 1.0vmin;
+  padding-top: 0px;
+}
+
+html #menubar-top ul#buttonbar {
+  position: fixed;
+  top: 5.0vmin;
+  right: 0;
+  left: 0;
+  height: 10.0vmin;
+}
+
+html #menubar-top ul#buttonbar button {
+  height: 10.0vmin;
+}
+
+html #board {
+  position: fixed;
+  top: 20.0vmin;
+  left: 5px;
+  right: 5px;
+  bottom: 20.0vmin;
+  overflow: scroll;
+  display: block;
+  max-height: calc(100%  -  20.0vmin);
+}
+
+html table {
+  background-color: grey;
+  margin: 0 auto;
+}
+
+html table tr {
+  background-color: green;
+  transition: background-color .2s;
+  border-width: 3px;
+  border-style: solid;
+}
+
+html table tr.cursor-at {
+  background-color: red;
+}
+
+html table td.board-area {
+  min-width: 40.0px;
+  height: 40.0px;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+html table td.board-area button {
+  width: 40.0px;
+  height: 40.0px;
+  text-align: center;
+  background-color: transparent;
+  border-width: 0px;
+  padding: 0;
+  margin: 0;
+}
+
+html table td.board-area button.selected {
+  background-color: blue;
+}
