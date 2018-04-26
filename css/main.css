@@ -1,10 +1,10 @@
 html {
   background-color: hsla(240, 100%, 90%, 1.0);
-  position: fixed;
+  position: absolute;
 }
 
 html #frame {
-  position: fixed;
+  position: absolute;
   top: 0.0%;
   bottom: 0.0%;
   right: 0.0%;
@@ -22,7 +22,7 @@ html ul li {
 }
 
 html #menubar-top {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
@@ -31,7 +31,7 @@ html #menubar-top {
 
 html #menubar-top ul#infobar {
   font-size: 3.0vmin;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   left: 0.5vmin;
