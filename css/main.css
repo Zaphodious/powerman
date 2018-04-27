@@ -96,7 +96,10 @@ html #board {
 html table {
   position: relative;
   z-index: -10;
-  padding: 100px;
+  padding-right: 2.0vmin;
+  padding-left: 2.0vmin;
+  padding-top: 20.0vmin;
+  padding-bottom: 20.0vmin;
 }
 
 html table tr {
