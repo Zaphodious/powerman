@@ -1,10 +1,23 @@
 html {
   background-color: hsla(240, 100%, 90%, 1.0);
   position: fixed;
+  width: 100%;
+}
+
+html body {
+  width: 100%;
+  right: 0.0%;
+  top: 0.0%;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  display: inline-block;
+  bottom: 0.0%;
+  left: 0.0%;
 }
 
 html #frame {
-  position: fixed;
+  position: absolute;
   top: 0.0%;
   bottom: 0.0%;
   right: 0.0%;
@@ -22,16 +35,20 @@ html ul li {
 }
 
 html #menubar-top {
-  position: fixed;
+  z-index: 10;
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
-  height: 20.0vmin;
+  width: 100%;
+  display: block;
+  height: 20.0%;
 }
 
 html #menubar-top ul#infobar {
-  font-size: 3.0vmin;
-  position: fixed;
+  font-size: 5.0vmin;
+  position: relative;
+  display: block;
   top: 0;
   right: 0;
   left: 0.5vmin;
@@ -41,14 +58,15 @@ html #menubar-top ul#infobar {
 
 html #menubar-top ul#infobar li {
   width: 30.5vmin;
-  border-width: 0.1vmin;
+  border-width: 0.3vmin;
   padding-bottom: 0px;
-  margin-right: 0.5vmin;
+  margin-right: 0.0vmin;
   text-align: center;
   border-style: solid;
   border-bottom-right-radius: 3.0vmin;
   border-bottom-left-radius: 3.0vmin;
   padding-right: 1.0vmin;
+  display: inline-block;
   padding-left: 1.0vmin;
   padding-top: 0px;
 }
@@ -67,18 +85,21 @@ html #menubar-top ul#buttonbar button {
 
 html #board {
   position: fixed;
-  top: 20.0vmin;
-  left: 5px;
-  right: 5px;
-  bottom: 20.0vmin;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   overflow: scroll;
   display: block;
-  max-height: calc(100%  -  20.0vmin);
 }
 
 html table {
-  background-color: grey;
-  margin: 0 auto;
+  position: relative;
+  z-index: -10;
+  padding-right: 2.0vmin;
+  padding-left: 2.0vmin;
+  padding-top: 20.0vmin;
+  padding-bottom: 20.0vmin;
 }
 
 html table tr {
@@ -93,16 +114,16 @@ html table tr.cursor-at {
 }
 
 html table td.board-area {
-  min-width: 40.0px;
-  height: 40.0px;
+  min-width: 30.0px;
+  height: 30.0px;
   margin: 0;
   padding: 0;
   border: none;
 }
 
 html table td.board-area button {
-  width: 40.0px;
-  height: 40.0px;
+  width: 30.0px;
+  height: 30.0px;
   text-align: center;
   background-color: transparent;
   border-width: 0px;
